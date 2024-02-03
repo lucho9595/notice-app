@@ -1,0 +1,14 @@
+.heading {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+}
+
+.spacelab {
+    padding: 47px;
+    background-color: #304359;
+    border-radius: 15px;
+}
