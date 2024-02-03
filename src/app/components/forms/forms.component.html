@@ -8,21 +8,13 @@
                 <div class="form-group">
                     <label for="exampleSelect1" class="form-label mt-4">Category</label>
                     <select class="form-select" name="category">
-                        <option>General</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
+                        <option *ngFor="let category of categories">{{category.name}}</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <label for="exampleSelect1" class="form-label mt-4">Country</label>
                     <select class="form-select" name="country">
-                        <option>Argentina</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
+                        <option *ngFor="let country of countries">{{country.name}}</option>
                     </select>
                 </div>
             </form>
