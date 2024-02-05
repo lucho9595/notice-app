@@ -7,6 +7,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FormsComponent } from './components/forms/forms.component';
 import { ListNoticeComponent } from './components/list-notice/list-notice.component';
 import { SpinnerComponent } from './shared/spinner/spinner.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { SpinnerComponent } from './shared/spinner/spinner.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

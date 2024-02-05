@@ -1,5 +1,6 @@
 <app-navbar [title]="'App Notices'"></app-navbar>
 <div class="container">
-    <app-forms></app-forms>
-    <app-list-notice></app-list-notice>
+    <app-forms (paramsSelect)="searchNotice($event)"></app-forms>
+    <app-spinner *ngIf="loading===true"></app-spinner>
+    <app-list-notice [listNotices]="listsNotices"></app-list-notice>
 </div>
